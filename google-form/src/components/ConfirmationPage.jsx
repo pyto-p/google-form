@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-function ConfirmationPage() {
+const ConfirmationPage = () => {
   return (
-    <div>ConfirmationPage</div>
-  )
-}
+    <div className="max-w-md mx-auto bg-gray-300 p-5 border rounded-lg shadow-lg">
+      <h1 className="text-2xl font-bold mb-4">Confirmation</h1>
+      <p className="text-green-600">Your form has been successfully submitted!</p>
+    </div>
+  );
+};
 
-export default ConfirmationPage
+export default ConfirmationPage;

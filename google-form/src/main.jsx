@@ -7,12 +7,22 @@ import {
 import App from "./App";
 import BasicInfoForm from "./components/BasicInfoForm";
 import ConfirmationPage from "./components/ConfirmationPage";
+import FamilyRelationsForm from './components/FamilyRelationsForm';
+import MedicalHistoryForm from './components/MedicalHistoryForm';
 import "./index.css";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <BasicInfoForm />,
+  },
+  {
+    path: "/medical",
+    element: <MedicalHistoryForm />
+  },
+  {
+    path: "/family",
+    element: <FamilyRelationsForm />
   },
   {
     path: "/confirmation",
